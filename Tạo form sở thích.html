@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Thông Tin</title>
+
+</head>
+<body>
+<div class="form-container">
+  <h2>Thông Tin Cá Nhân</h2>
+  <form action="#" method="post">
+    <label for="yourname">Họ và tên:</label>
+    <input type="text" id="yourname" name="yourname" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <div class="checkbox-group">
+      <label>Sở thích:</label>
+      <label><input type="checkbox" name="hobby" value="Đọc sách"> Đọc sách</label>
+      <label><input type="checkbox" name="hobby" value="Du lịch"> Du lịch</label>
+      <label><input type="checkbox" name="hobby" value="Nghe nhạc"> Nghe nhạc</label>
+      <label><input type="checkbox" name="hobby" value="Thể thao"> Thể thao</label>
+    </div>
+
+    <div class="form-buttons">
+      <input type="submit" value="Gửi thông tin">
+      <input type="reset" value="Nhập lại">
+    </div>
+  </form>
+</div>
+</body>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+  }
+
+  .form-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    width: 400px;
+  }
+
+  .form-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #444;
+    font-weight: bold;
+  }
+
+  input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+
+  .checkbox-group {
+    margin-bottom: 15px;
+  }
+
+  .checkbox-group label {
+    font-weight: normal;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .form-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  input[type="submit"], input[type="reset"] {
+    width: 48%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  input[type="reset"] {
+    background-color: #6c757d;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+
+  input[type="reset"]:hover {
+    background-color: #5a6268;
+  }
+</style>
+</html>
