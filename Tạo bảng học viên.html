@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form đăng ký học viên</title>
+</head>
+<body>
+<div class="form-container">
+    <h2>Đăng ký học viên</h2>
+    <form action="#" method="post">
+        <label for="yourname">Họ và tên</label>
+        <input type="text" id="yourname" name="yourname" required>
+
+        <div class="checkbox-group">
+        <label for="date">Ngày sinh</label>
+        <input type="text" id="date" name="date" required>
+        </div>
+
+
+
+        <div class="checkbox-group">
+            <label>Giới tính</label>
+            <label><input type="radio" name="gender" value="Nam">Nam</label>
+            <label><input type="radio" name="gender" value="Nữ">Nữ</label>
+        </div>
+
+        <div class="checkbox">
+            <label for="Diachi">Địa chỉ</label>
+            <textarea id="Diachi" name="Diachi" required></textarea>
+        </div>
+        <p>Lớp</p>
+        <select name="Lớp">Lớp
+            <option value="PM25">PM25</option>
+            <option value="PM10">PM10</option>
+            <option value="PM50">PM50</option>
+            <option value="PM26">PM26</option>
+            <option value="PM27">PM27</option>
+            <option value="PM28">PM28</option>
+            <option value="PM29">PM29</option>
+        </select>
+        <div class="checkbox-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="checkbox-group">
+            <label for="sđt">Số điện thoại</label>
+            <input type="text" id="sđt" name="sđt" required>
+        </div>
+        <div class="form-buttons">
+            <input type="submit" value="Đăng ký">
+            <input type="reset" value="Nhập lại">
+        </div>
+
+    </form>
+</div>
+</body>
+<style>
+    .form-container {
+        display-inside: ruby;
+        background-color: antiquewhite;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px #888888;
+        width: 400px;
+    }
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        justify-content: center;
+        padding-top: 80px;
+    }
+    label {
+        font-size: 20px;
+        color: black;
+    }
+    input[type=text],[type=email] {
+        width: 60%;
+        margin-bottom: 15px;
+        border: 1px solid black;
+    }
+    input[type=submit],[type=reset] {
+        width: 30%;
+        font-size: 20px;
+        background-color: #dcd9d9;
+        color: black;
+        border: 1px solid black;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: background-color 0.5s;
+    }
+    .checkbox-group {
+        margin-bottom: 10px;
+    }
+    .checkbox-group label{
+        font-size: 20px;
+        font-weight: normal;
+        margin-bottom: 10px;
+    }
+    .form-buttons {
+        display: flex;
+        justify-content: center;
+    }
+    select {
+        width: 50%;
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    input[type=submit]:hover {
+        background-color: #dcd9d9;
+    }
+    input[type=reset]:hover {
+        background-color: #dcd9d9;
+    }
+
+</style>
+</html>
